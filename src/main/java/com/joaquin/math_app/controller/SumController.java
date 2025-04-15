@@ -15,8 +15,8 @@ public class SumController {
 
     @GetMapping("/sum/{num1}/{num2}")
     public int getSum(@PathVariable int num1, @PathVariable int num3) {
-        // llamamos al servicio de calcular suma
+
         SumEntity sumEntity = sumService.calculateSum(num1, num3);
-        return sumEntity.getResult(); // dar el resultado
+        return sumEntity.getResult();
     }
 }
