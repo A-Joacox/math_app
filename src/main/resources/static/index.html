@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aplicación de Suma y Resta</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        h1 {
+            color: #333;
+        }
+        .content {
+            margin: 20px 0;
+        }
+        p {
+            font-size: 18px;
+        }
+        .example {
+            font-size: 16px;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Aplicación de Suma y Resta</h1>
+
+    <div class="content">
+        <h2>¿Cómo funciona?</h2>
+        <p>Esta aplicación tiene dos operaciones básicas: suma y resta. Para realizar estas operaciones, solo necesitas ingresar dos números en la URL de la siguiente manera:</p>
+
+        <p><strong>Suma</strong>: Para sumar dos números, ingresa la URL en el siguiente formato:</p>
+        <p class="example">`http://localhost:8080/sum/{num1}/{num2}`</p>
+        <p>Por ejemplo, para sumar `2 + 2`, la URL sería:</p>
+        <p class="example">`http://localhost:8080/sum/2/2`</p>
+        <p>Esto te devolverá el resultado: <strong>4</strong>.</p>
+
+        <p><strong>Resta</strong>: Para restar dos números, ingresa la URL en el siguiente formato:</p>
+        <p class="example">`http://localhost:8080/resta/{num1}/{num2}`</p>
+        <p>Por ejemplo, para restar `5 - 3`, la URL sería:</p>
+        <p class="example">`http://localhost:8080/resta/5/3`</p>
+        <p>Esto te devolverá el resultado: <strong>2</strong>.</p>
+
+        <p>Recuerda que si intentas restar números donde el primero es menor o igual al segundo, recibirás un error. Para la suma, si los dos números son iguales, también se mostrará un mensaje de error.</p>
+    </div>
+
+</div>
+
+</body>
+</html>
